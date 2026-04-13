@@ -5,16 +5,16 @@ import Link from 'next/link';
 
 export default function CtaBanner() {
   return (
-    <section className="py-20 px-8 bg-surface">
+    <section className="pt-0 md:pt-20 py-20 px-8 bg-surface">
       <div className="max-w-7xl mx-auto">
         <FadeInSection direction="up" delay={200}>
-          <div className="bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 rounded-2xl p-6 md:p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="absolute inset-0 technical-grid opacity-20 pointer-events-none"></div>
             <div className="relative z-10 max-w-2xl text-center md:text-left">
-              <h2 className="text-4xl md:text-5xl font-headline font-bold text-white leading-tight">
+              <h2 className="text-[24px] md:text-5xl font-headline font-bold text-white leading-tight">
                 Ready to Upgrade Your Clinical Infrastructure?
               </h2>
-              <p className="mt-4 text-on-surface-variant text-lg">
+              <p className="mt-4 text-on-surface-variant text-[16px] md:text-lg">
                 Partner with SKYON Innovations for engineering solutions that redefine patient care standards.
               </p>
             </div>

@@ -1,13 +1,11 @@
 import type { Metadata, Viewport } from 'next';
-import { Sora, Manrope, Inter } from 'next/font/google';
+import { Sora } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import './globals.css';
 
 const sora = Sora({ subsets: ['latin'], variable: '--font-sora' });
-const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: {
@@ -72,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sora.variable} ${manrope.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={sora.variable} suppressHydrationWarning>
       <body>
         <div className="flex flex-col min-h-screen relative">
           <Navbar />

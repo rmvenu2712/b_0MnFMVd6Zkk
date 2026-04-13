@@ -16,8 +16,8 @@ export default function GalleryContent() {
               <div className="w-12 h-[1px] bg-primary-container/60"></div>
               <span className="text-primary-container font-label text-[10px] md:text-xs tracking-[0.4em] uppercase font-bold">Clinical Environment</span>
             </div>
-            <h1 className="font-headline text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface leading-[0.9] mb-8 uppercase">
-              Innovation <br className="hidden sm:block"/><span className="text-primary-container text-glow">Gallery</span>
+            <h1 className="font-headline whitespace-nowrap text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface leading-[0.9] mb-8">
+              Innovation <span className="text-primary-container text-glow">Gallery</span>
             </h1>
             <p className="font-body text-sm md:text-lg font-light text-on-surface-variant leading-relaxed max-w-xl">
               Explore our precision-engineered medical ecosystems. From robotic surgery suites to sterile ICU environments, witness the future of patient care.
@@ -33,9 +33,9 @@ export default function GalleryContent() {
             {/* Featured Wide Item (Mobile/Tablet 1 col, Desktop spans 2) */}
             <div className="lg:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low transition-premium gallery-item-hover">
               <div className="aspect-video sm:aspect-[16/10] overflow-hidden">
-                <img 
-                  alt="Cybernetic Theatre" 
-                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100" 
+                <img
+                  alt="Cybernetic Theatre"
+                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT0Xny78EWmOyI43NR55V3R-3Kd4RKYx_MAh9wg6E5pFSLFR8pI7xOksQdLDrwAY3f2IM6qTclLsF45q_k3YJI-Qivw69gRNAycTv7KJsyPSxNwHVTm_Z2_rUuWfI5LYrL_W6cTisFMdLfiyPo6XZve7LRIljJGWWQA_Jhm0ISL5o7rjXMmE0h5UlqpHHvuLM7LDZ6RqqEGIuwYPeLxEtZ97q5dm_Xrkr5R60ljQ1QbhPtc5nQ6J79BOdaAyrMyaaf8gmzN_6X4Rhb"
                 />
               </div>
@@ -57,9 +57,9 @@ export default function GalleryContent() {
             {/* Standard Item 1 */}
             <div className="group relative overflow-hidden rounded-xl bg-surface-container-low transition-premium gallery-item-hover">
               <div className="aspect-square overflow-hidden">
-                <img 
-                  alt="Precision Tools" 
-                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100" 
+                <img
+                  alt="Precision Tools"
+                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyjpFFnmsnwvLEM4z4dVQ4RYx153pXlKfyo1IvjCaYzZaJ-HtTgErIjIFrx7uqJpD32YzQcbzblfKTzAwDstT-1KdLW7Kr7Gijf3IkYycrGsy5avIPu58IzVEA8yGWfgODKjD3Uycs64AhLUANyM5U9akvG8q-aqmY1MrKwvgwMzlZzg3eIyx_gwt-oRlFj32RK_oD4hK6--m_YFN0MwSIBYDxkMTmOqkDcS8OgNyB-Y8-7oQl73EpuHjKIR77hZJl64E81TpKp_S"
                 />
               </div>
@@ -73,9 +73,9 @@ export default function GalleryContent() {
             {/* Standard Item 2 */}
             <div className="group relative overflow-hidden rounded-xl bg-surface-container-low transition-premium gallery-item-hover">
               <div className="aspect-square overflow-hidden">
-                <img 
-                  alt="Corridor Alpha" 
-                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100" 
+                <img
+                  alt="Corridor Alpha"
+                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPTdCs2MdwDytVQAKJKTAsht8sjdw2Bynsim6CFjfGIleQbgu7b0YfvUdBreMvbUHpWVcU4BOR3gWBSM_nOSu5vc_ypbp-Hu0g6o3IBnv58mBu0y9viIhoB-bVebXc5ZUtaxWT-GslFm9S-U5rfmgul_YklYucFCIyK9OPp07NdQyu9kLU6qfOPD3yJetWE7JO7PmGDth7z1daBOACkSn8sG1oKYxNoePnY95aBPUFenby0o8cwN7Ke29c6R08dSN2-Fb9HfFvqi0A"
                 />
               </div>
@@ -89,9 +89,9 @@ export default function GalleryContent() {
             {/* Detail Focus (Tall on desktop) */}
             <div className="lg:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low transition-premium gallery-item-hover">
               <div className="aspect-video sm:aspect-square lg:aspect-[4/5] overflow-hidden">
-                <img 
-                  alt="Synthesis Lab" 
-                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100" 
+                <img
+                  alt="Synthesis Lab"
+                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7sFdOY9All-jLiEKIm4pADfE3ykgsBgIPmOuQ7-vyrdJMY8l0AST5WpRhCexTEK25p4FD8S_ZoACZEGtYHjJGl-Hz1GOSmckQqAJegLpMlwxGMMC717tYqBNLl0OC7S6G-VgwFqMl32bzRB29CivdoPVil_ifArX4rzVHWYivQQo449802JE1AWolMLN5CA0SX-Zl_IVoVApBXwOGmPHAZK2NL34rDIv5KB9iaYyRUY6YYlTP1pT7VoxluhWtUlSil_LHo7HGP-pE"
                 />
               </div>
@@ -106,9 +106,9 @@ export default function GalleryContent() {
             {/* Wide Item 2 */}
             <div className="lg:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low transition-premium gallery-item-hover">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  alt="Recovery Module" 
-                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100" 
+                <img
+                  alt="Recovery Module"
+                  className="w-full h-full object-cover grayscale opacity-60 transition-premium duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwwekwf-IiQkjmqlZxuQrWl08ywWbPOqRSTCppub67k53_ef5cv_f23qwG5V8PJgdsEJx0CzEA_mwBfOrOYBoZGNtRhaZyKaj9ickivEFqJzba86OmE7Fn-mCkNAXRPV_7_Vu24bdsSJGh68L3wKum82PmL2l_akLptLbZ1Qa7QIvFwIyuPRSbB-oejV-dT00bYZnSmI5zk_XwPJ52yi4lLqmvRMMdM3NKUfM40IT9lR4RU-ruKnwpwNgHT0_F7D-oA81nZMC01e3"
                 />
               </div>

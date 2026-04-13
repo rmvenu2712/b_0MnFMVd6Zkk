@@ -45,7 +45,7 @@ export default function AboutPreview() {
                 </p>
               </div>
               <Link
-                href="/about"
+                href="/about-us"
                 className="inline-block px-10 py-4 rounded-full border border-primary/30 text-primary font-bold hover:bg-primary/10 transition-all"
               >
                 Read Full Story

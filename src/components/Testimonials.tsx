@@ -48,13 +48,13 @@ export default function Testimonials() {
         <FadeInSection direction="up" delay={100}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 py-8">
-              <h2 className="text-4xl font-headline font-bold text-white leading-tight">
+              <h2 className="text-[24px] md:text-4xl font-headline font-bold text-white leading-tight">
                 Trusted by Leading Institutions
               </h2>
               <p className="mt-6 text-on-surface-variant italic leading-relaxed">
                 Our clinical luminaries share their experiences with SKYON Innovations engineering.
               </p>
-              
+
               <div className="flex gap-4 mt-8">
                 <button onClick={scrollPrev} className="p-3 rounded-full border border-outline-variant/30 text-white hover:bg-surface-variant transition-colors hover:text-primary hover:border-primary">
                   <ChevronLeft className="w-5 h-5" />
@@ -69,8 +69,8 @@ export default function Testimonials() {
               <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex gap-6 pb-4">
                   {testimonials.map((t, idx) => (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="flex-[0_0_100%] md:flex-[0_0_calc(50%-12px)] min-w-0"
                     >
                       <div className="glass-card bg-surface-container/40 p-10 rounded-xl border border-outline-variant/10 space-y-6 h-full flex flex-col justify-between">

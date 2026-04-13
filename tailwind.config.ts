@@ -38,8 +38,8 @@ export default {
       },
       fontFamily: {
         headline: ['Sora', 'sans-serif'],
-        body: ['Manrope', 'sans-serif'],
-        label: ['Inter', 'sans-serif'],
+        body: ['Sora', 'sans-serif'],
+        label: ['Sora', 'sans-serif'],
       },
       backgroundImage: {
         'technical-grid':

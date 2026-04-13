@@ -36,11 +36,11 @@ export default function NotFound() {
         <h1 className="text-8xl md:text-9xl font-headline font-extrabold text-white tracking-tighter mb-4 text-glow opacity-90 drop-shadow-2xl">
           404
         </h1>
-        
-        <h2 className="text-3xl md:text-4xl font-headline font-bold text-white mb-6">
+
+        <h2 className="text-3xl md:text-[24px] md:text-4xl font-headline font-bold text-white mb-6">
           Page <span className="text-primary text-glow">Not Found</span>
         </h2>
-        
+
         <p className="text-on-surface-variant max-w-md mx-auto mb-12 leading-relaxed text-lg">
           The precision instrument you are looking for couldn't be located. The link might be broken or the page may have been removed.
         </p>

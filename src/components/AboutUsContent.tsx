@@ -4,171 +4,215 @@ import FadeInSection from "@/components/FadeInSection";
 
 export default function AboutUsContent() {
   return (
-    <main className="pt-16 technical-grid min-h-screen">
-      {/* Hero Section */}
+    <main className="pt-24 pb-32 technical-grid min-h-screen">
+      {/* Hero Section: Asymmetric Editorial */}
       <FadeInSection>
-        <section className="relative min-h-[795px] flex flex-col md:flex-row items-center border-b border-outline-variant/10 overflow-hidden">
-          <div className="w-full md:w-1/2 h-[442px] md:h-[795px] relative">
-            <img 
-              alt="Medical technology visual" 
-              className="w-full h-full object-cover grayscale brightness-50 contrast-125" 
-              data-alt="Ultra-modern 3D medical sensor equipment in a sterile environment with cyan neon accents and high-precision mechanical components" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQiUgkwllaMT0YDebcqQ2aBB659VI5oIQkL_xgoH4qxuG3ich9OZkXPuBDT1UJpvDhq_Za_ISCVHUYSloVtXYb756L8EsOtQ8I8Gi1A1KUEvNNiUMIYooovuTisM3ELV49PuX2FDn47XVMMaTOfd9JzPJOzjRV3btuhq9SVLAF-3_o-I3wHik5KmnIcsX4LPYT8yC1ktmd7YXgf5ox0D-KUZGz90PPGQevX9rXBcIeroxG3tMdg9LKnh3gcc3IDdnO2LTUzrbOpiJW"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-surface"></div>
-          </div>
-          <div className="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-center gap-6">
-            <span className="label-sm uppercase tracking-[0.2em] text-primary font-medium">Est. 2009 — Clinical Excellence</span>
-            <h1 className="text-5xl md:text-7xl font-bold leading-[0.9] tracking-tighter">
-              THE ARCHITECTURE <br/> OF <span className="text-primary">PRECISION</span>.
-            </h1>
-            <p className="text-on-surface-variant font-light text-lg max-w-lg leading-relaxed">
-              SKYON Innovations operates at the intersection of surgical robotics and quantum sensing. We don&apos;t just build tools; we engineer the future of human longevity through sterile innovation and uncompromising reliability.
-            </p>
-            <div className="flex gap-4 mt-4">
-              <div className="w-12 h-[1px] bg-primary self-center"></div>
-              <span className="text-[10px] uppercase tracking-widest text-outline">Protocol v.4.02 // Operational</span>
+        <section className="relative px-6 md:px-12 py-20 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+            <div className="md:col-span-7 z-10">
+              <span className="inline-block px-4 py-1 rounded-full bg-tertiary-container/10 text-tertiary text-xs font-bold tracking-[0.2em] uppercase mb-6">
+                Established 2009
+              </span>
+              <h2 className="text-5xl md:text-8xl font-extrabold font-headline leading-tight tracking-tighter text-on-surface mb-8">
+                The Future of <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">
+                  Precision Care
+                </span>
+              </h2>
+              <p className="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                SKYON Innovations represents the zenith of cleanroom &amp; OT engineering. We integrate cutting-edge design with precision manufacturing to redefine controlled environments for healthcare and pharma.
+              </p>
+              <div className="flex gap-4 flex-wrap">
+                <a href="/products" className="glow-shadow px-8 py-4 rounded-lg bg-gradient-to-tr from-primary to-primary-container text-on-primary-container font-bold uppercase tracking-widest text-sm transition-all active:scale-95 inline-block hover:shadow-[0_0_25px_rgba(165,222,255,0.4)]">
+                  Our Products
+                </a>
+                <a href="/why-choose" className="px-8 py-4 rounded-lg border border-outline-variant/30 text-on-surface font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-all active:scale-95 inline-block">
+                  Why Choose Us
+                </a>
+              </div>
+            </div>
+            <div className="md:col-span-5 relative">
+              <div className="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[100px]"></div>
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl rotate-3 transform hover:rotate-0 transition-transform duration-700 bg-surface-container-low p-2">
+                <img
+                  alt="Cleanroom facility"
+                  className="rounded-xl w-full aspect-[4/5] object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-srPOv1rc-ba4nd3-iOfMCA-zs1cg5QO5CvlnkIPH6ldzq8rHgfKMyvnY8Vzmj-j358M405myTL-FoL8b2zY5hFDj3D2oXabiIIbJnXwpt9Gc2eSMuq3waJEO6amlwaS_THy-5Jaz_k-PTmn_9EocRmRMfUT63fuO2xOod8hscHWJEGRuJ0JuClKaQ-l6Xz9A781vxlUzygf-aopC8R8jt7wNOgazZ6oswEMYgpC4bnJm2hRXWq4DEzsLtI0_LyXyTGH_jszd4cZX"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="absolute -bottom-8 -left-8 glass-card p-6 rounded-xl border border-primary/10 shadow-2xl max-w-[200px] z-20">
+                <p className="text-tertiary font-bold text-3xl mb-1">99.9%</p>
+                <p className="text-xs text-on-surface-variant leading-tight uppercase font-label">
+                  Precision Diagnostic Accuracy Standard
+                </p>
+              </div>
             </div>
           </div>
         </section>
       </FadeInSection>
 
-      {/* Values Section */}
+      {/* Milestones: Tonal Transitions */}
       <FadeInSection>
-        <section className="py-24 px-8 max-w-7xl mx-auto">
+        <section className="bg-surface-container-low py-24">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="space-y-2">
+                <p className="text-5xl font-extrabold font-headline text-primary tracking-tighter">500+</p>
+                <p className="text-sm uppercase tracking-widest text-on-surface-variant font-label font-medium">Projects Delivered</p>
+                <div className="h-1 w-12 bg-primary/20"></div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-5xl font-extrabold font-headline text-primary tracking-tighter">15+</p>
+                <p className="text-sm uppercase tracking-widest text-on-surface-variant font-label font-medium">Years Experience</p>
+                <div className="h-1 w-12 bg-primary/20"></div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-5xl font-extrabold font-headline text-primary tracking-tighter">42+</p>
+                <p className="text-sm uppercase tracking-widest text-on-surface-variant font-label font-medium">Product Range</p>
+                <div className="h-1 w-12 bg-primary/20"></div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-5xl font-extrabold font-headline text-primary tracking-tighter">24/7</p>
+                <p className="text-sm uppercase tracking-widest text-on-surface-variant font-label font-medium">AMC Support</p>
+                <div className="h-1 w-12 bg-primary/20"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      {/* Clinical Core Directives: Bento Grid */}
+      <FadeInSection>
+        <section className="py-24 px-6 max-w-7xl mx-auto">
           <div className="mb-16">
-            <h2 className="text-3xl font-bold tracking-tighter uppercase text-primary">Core Directives</h2>
-            <div className="h-px w-24 bg-primary mt-2"></div>
+            <h3 className="text-xs font-bold text-tertiary uppercase tracking-[0.4em] mb-4">Foundation</h3>
+            <h2 className="text-4xl font-extrabold font-headline tracking-tight">Core Directives</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/10 border border-outline-variant/10">
-            {/* Value 1 */}
-            <div className="bg-surface p-12 group hover:bg-surface-bright transition-all duration-500">
-              <span className="material-symbols-outlined text-primary mb-6 text-4xl block opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-transform" data-icon="biotech">&#xea3a;</span>
-              <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">Innovation</h3>
-              <p className="text-on-surface-variant font-light text-sm leading-relaxed">Pioneering neural-link diagnostics and real-time cellular imaging protocols to redefine clinical limits.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Large Card */}
+            <div className="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-highest p-10 flex flex-col justify-between min-h-[400px]">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <span className="material-symbols-outlined text-[160px]">&#xea3a;</span>
+              </div>
+              <div className="relative z-10">
+                <span className="material-symbols-outlined text-primary text-4xl mb-6 block">&#xf049;</span>
+                <h4 className="text-3xl font-bold font-headline mb-4">Engineered Excellence</h4>
+                <p className="text-on-surface-variant text-lg max-w-md leading-relaxed">
+                  We don&apos;t just build cleanrooms; we architect controlled environments. Our systems deliver uncompromising sterility through precision engineering and turnkey execution.
+                </p>
+              </div>
+              <div className="mt-8 flex items-center gap-4 text-primary font-bold uppercase text-xs tracking-widest cursor-pointer hover:gap-6 transition-all">
+                Explore Methodology
+                <span className="material-symbols-outlined">&#xe5c8;</span>
+              </div>
             </div>
-            {/* Value 2 */}
-            <div className="bg-surface p-12 group hover:bg-surface-bright transition-all duration-500">
-              <span className="material-symbols-outlined text-primary mb-6 text-4xl block opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-transform" data-icon="verified_user">&#xe8e8;</span>
-              <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">Safety</h3>
-              <p className="text-on-surface-variant font-light text-sm leading-relaxed">Redundant algorithmic verification systems ensuring zero-failure performance in critical environments.</p>
-            </div>
-            {/* Value 3 */}
-            <div className="bg-surface p-12 group hover:bg-surface-bright transition-all duration-500">
-              <span className="material-symbols-outlined text-primary mb-6 text-4xl block opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-transform" data-icon="precision_manufacturing">&#xf049;</span>
-              <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">Reliability</h3>
-              <p className="text-on-surface-variant font-light text-sm leading-relaxed">Engineered for 99.999% uptime in the most demanding global medical facilities and research labs.</p>
-            </div>
-            {/* Value 4 */}
-            <div className="bg-surface p-12 group hover:bg-surface-bright transition-all duration-500">
-              <span className="material-symbols-outlined text-primary mb-6 text-4xl block opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-transform" data-icon="public">&#xe80b;</span>
-              <h3 className="text-xl font-bold mb-4 tracking-tight uppercase">Global Standards</h3>
-              <p className="text-on-surface-variant font-light text-sm leading-relaxed">Adhering to and exceeding ISO-9000 clinical protocols across all six continents of operation.</p>
-            </div>
-          </div>
-        </section>
-      </FadeInSection>
 
-      {/* Milestones Strip */}
-      <FadeInSection>
-        <section className="bg-surface-container-low py-20 border-y border-outline-variant/10">
-          <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="text-center md:text-left">
-              <span className="text-4xl md:text-6xl font-black text-primary font-headline tracking-tighter">2009</span>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-outline mt-2">Foundation Origin</p>
-            </div>
-            <div className="w-px h-12 bg-outline-variant/20 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <span className="text-4xl md:text-6xl font-black text-primary font-headline tracking-tighter">500+</span>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-outline mt-2">Enterprise Clients</p>
-            </div>
-            <div className="w-px h-12 bg-outline-variant/20 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <span className="text-4xl md:text-6xl font-black text-primary font-headline tracking-tighter">142</span>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-outline mt-2">Patents Etched</p>
-            </div>
-            <div className="w-px h-12 bg-outline-variant/20 hidden md:block"></div>
-            <div className="text-center md:text-left">
-              <span className="text-4xl md:text-6xl font-black text-primary font-headline tracking-tighter">24/7</span>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-outline mt-2">System Monitoring</p>
-            </div>
-          </div>
-        </section>
-      </FadeInSection>
-
-      {/* Engineering Philosophy */}
-      <FadeInSection>
-        <section className="py-32 px-8 max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-16 items-start">
-            <div className="w-full md:w-1/3 sticky top-32">
-              <h2 className="text-5xl font-bold tracking-tighter leading-none uppercase mb-8">Engineering <br/><span className="text-primary-dim">Philosophy</span></h2>
-              <p className="text-on-surface-variant font-light leading-relaxed mb-6">Our approach is defined by &quot;The Precision Laboratory&quot; mandate. We eliminate visual noise to focus on the microscopic data that matters.</p>
-              <div className="p-6 bg-surface-container-high rounded-lg border border-outline-variant/5">
-                <span className="text-[10px] text-primary uppercase tracking-widest block mb-2">Live Telemetry</span>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-                  <span className="text-xs font-mono text-on-surface-variant">R&amp;D CLUSTER ALPHA ACTIVE</span>
+            {/* Vertical Card */}
+            <div className="rounded-xl bg-surface-container-high p-8 flex flex-col border border-outline-variant/10">
+              <span className="material-symbols-outlined text-tertiary text-4xl mb-6">&#xea4b;</span>
+              <h4 className="text-2xl font-bold font-headline mb-4">Quality Verification</h4>
+              <p className="text-on-surface-variant leading-relaxed mb-auto">
+                Every installation is validated through NABL-accredited IQ/OQ/PQ protocols, ensuring 100% compliance with ISO 14644 and GMP standards.
+              </p>
+              <div className="mt-8 p-4 rounded-lg bg-surface-dim/50 border border-outline-variant/10">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] uppercase tracking-widest font-bold opacity-60">Verification Status</span>
+                  <span className="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#50d190]"></span>
                 </div>
+                <p className="font-mono text-xs text-tertiary">SKY-QC-ACTIVE</p>
               </div>
             </div>
-            <div className="w-full md:w-2/3 space-y-6">
-              <div className="glass-panel p-10 border border-outline-variant/10 ambient-glow-primary rounded-xl">
-                <h4 className="text-primary font-bold uppercase tracking-widest text-xs mb-4">Module 01 // Structural Integrity</h4>
-                <p className="text-lg font-light leading-relaxed text-on-surface">Every component of SKYON Innovations systems is designed with aerospace-grade alloys and chemically resistant polymers, ensuring longevity in sterile, high-radiation zones.</p>
-              </div>
-              <div className="glass-panel p-10 border border-outline-variant/10 ambient-glow-primary rounded-xl">
-                <h4 className="text-primary font-bold uppercase tracking-widest text-xs mb-4">Module 02 // Neural Latency</h4>
-                <p className="text-lg font-light leading-relaxed text-on-surface">By minimizing signal decay between operator and instrument, our hardware achieves near-zero latency, allowing surgeons to perform micro-vascular adjustments with 2-micron precision.</p>
-              </div>
-              <div className="glass-panel p-10 border border-outline-variant/10 ambient-glow-primary rounded-xl">
-                <h4 className="text-primary font-bold uppercase tracking-widest text-xs mb-4">Module 03 // Bio-Ethical Alignment</h4>
-                <p className="text-lg font-light leading-relaxed text-on-surface">Data sovereignty is etched into our firmware. Patient privacy is protected by localized encryption kernels that never leave the clinical facility&apos;s perimeter.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </FadeInSection>
 
-      {/* Global Impact Map Section */}
-      <FadeInSection>
-        <section className="py-24 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            {/* Glassmorphism Metric Card */}
+            <div className="rounded-xl bg-gradient-to-br from-surface-container-high to-surface-container-low p-8 border border-outline-variant/10 group">
+              <span className="material-symbols-outlined text-primary-container text-4xl mb-6">&#xe6dd;</span>
+              <h4 className="text-2xl font-bold font-headline mb-4">Smart Design</h4>
+              <p className="text-on-surface-variant leading-relaxed">
+                3D visualization and virtual prototyping before construction begins. Our design team delivers layout drafting compliant with GMP, ISO, and NABH standards.
+              </p>
+            </div>
+
+            {/* Small Focus Card with Image */}
+            <div className="md:col-span-2 rounded-xl bg-surface-container-high p-8 grid md:grid-cols-2 gap-8 items-center border border-outline-variant/10">
+              <div className="aspect-video rounded-lg overflow-hidden bg-surface-dim">
+                <img
+                  alt="Cleanroom visualization"
+                  className="w-full h-full object-cover mix-blend-lighten"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuABPsoXhI0sNEakNw04YyS6DKzUMuVXPpu8_EaObmsspb3sGIA0Fr6up8jX7timpFsRad7ZcgmVGT_-qmDdFs-9a2zu3emb2IhkHeTNC1pRS-Kwwu7SgFFfDY6FPiTOOVL3LtDdoF4_vfkK1TDv1HX2V8ZVUmYeT2s2OBM-0HDD5Nx5y_9bVrKZbuYIopxFyKx23zBYUwtTgjUSgOznCE2PRIybqCa2Dpa6mIZ9jKe897JejWaATpDkKaJzWWfAc0Dbx1SIfZDXbcCT"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
               <div>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-outline block mb-4">Operational Map</span>
-                <h2 className="text-4xl font-bold tracking-tighter uppercase">Global Presence</h2>
-              </div>
-              <div className="text-right">
-                <span className="text-primary font-mono text-sm">6 REGIONAL HUBS // 42 COUNTRIES</span>
+                <h4 className="text-2xl font-bold font-headline mb-3">Seamless Integration</h4>
+                <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  SKYON systems integrate with existing hospital infrastructure — from HVAC tie-ins to BMS connectivity — upgrading facilities with minimal disruption.
+                </p>
+                <a href="/products" className="text-primary font-bold text-xs uppercase tracking-tighter hover:underline underline-offset-4 transition-all">
+                  View Products
+                </a>
               </div>
             </div>
-            <div className="relative w-full aspect-[21/9] rounded-xl overflow-hidden grayscale border border-outline-variant/20">
-              <img 
-                alt="Global connectivity map" 
-                className="w-full h-full object-cover opacity-40" 
-                data-alt="A stylized global map with glowing data points and light connections on a dark background showing international medical logistics network" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6Shk3Xc349_kLWqxY0b6kNiOrhKRqX5enJwgwIO1dYd8HAceXTb4rWbU-NbLznleXBEo-C5l-NCYSCL3fBeWWpUmd9B1DpaLtQKUjtgb8EujcJqoVKtYbSeXbrburZrFIJyX02AkfFkKWMVCvsdZixIIe7pA9v1_2n7uOX43UfrZ2TeKFP2WLCCsBSrD4gC0mfb3zA_kc9XNdFMFJZVFy_3FVDD9T95ghD2qxDTBFxsDaMFKkFiFdMj7yWrtQNoGb-Xl01DTQwDBR"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
-              {/* Location Pointers */}
-              <div className="absolute bottom-8 left-8 right-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="p-4 bg-surface/80 backdrop-blur-md border-l-2 border-primary">
-                  <span className="text-[10px] text-outline block uppercase tracking-tighter">North America</span>
-                  <span className="font-bold text-sm">SAN FRANCISCO HUB</span>
+          </div>
+        </section>
+      </FadeInSection>
+
+      {/* System Vitality / Data Pulse Section */}
+      <FadeInSection>
+        <section className="py-24 bg-surface-dim relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-extrabold font-headline tracking-tight mb-6">Operational Excellence</h2>
+              <p className="text-on-surface-variant text-lg leading-relaxed mb-8">
+                Experience our commitment to quality through every project phase. From design validation to ongoing AMC, our systems maintain certified performance round the clock.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-primary">&#xe8e8;</span>
+                  </div>
+                  <p className="font-bold text-sm tracking-wide">ISO 14644 &amp; GMP Compliant</p>
                 </div>
-                <div className="p-4 bg-surface/80 backdrop-blur-md border-l-2 border-primary">
-                  <span className="text-[10px] text-outline block uppercase tracking-tighter">Europe</span>
-                  <span className="font-bold text-sm">BERLIN LOGISTICS</span>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-tertiary">&#xea0b;</span>
+                  </div>
+                  <p className="font-bold text-sm tracking-wide">NABL Accredited Validation</p>
                 </div>
-                <div className="p-4 bg-surface/80 backdrop-blur-md border-l-2 border-primary">
-                  <span className="text-[10px] text-outline block uppercase tracking-tighter">Asia Pacific</span>
-                  <span className="font-bold text-sm">SINGAPORE R&amp;D</span>
-                </div>
-                <div className="p-4 bg-surface/80 backdrop-blur-md border-l-2 border-primary">
-                  <span className="text-[10px] text-outline block uppercase tracking-tighter">Middle East</span>
-                  <span className="font-bold text-sm">DUBAI CLINICAL</span>
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-primary">&#xe869;</span>
+                  </div>
+                  <p className="font-bold text-sm tracking-wide">24/7 AMC &amp; Support Services</p>
                 </div>
               </div>
+            </div>
+
+            {/* Data Pulse Component */}
+            <div className="glass-panel bg-surface-container-low/40 rounded-2xl border border-outline-variant/15 p-8 relative">
+              <div className="flex justify-between items-center mb-8">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-1">Project Success Rate</p>
+                  <h5 className="text-2xl font-black font-headline">99.8%</h5>
+                </div>
+                <div className="px-3 py-1 rounded bg-tertiary/10 text-tertiary text-[10px] font-bold tracking-tighter uppercase">Operational</div>
+              </div>
+
+              {/* Sparkline Simulation */}
+              <div className="h-48 w-full flex items-end gap-1 overflow-hidden">
+                <div className="flex-1 bg-tertiary/20 h-[30%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/40 h-[45%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/60 h-[60%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/30 h-[40%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/50 h-[75%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/80 h-[90%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/40 h-[65%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/70 h-[85%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/50 h-[70%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary/90 h-[100%] rounded-t-sm"></div>
+                <div className="flex-1 bg-tertiary h-[95%] rounded-t-sm"></div>
+              </div>
+              <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/5 rounded-full blur-2xl"></div>
             </div>
           </div>
         </section>

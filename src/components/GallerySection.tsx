@@ -28,17 +28,17 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <FadeInSection direction="up" delay={100}>
           <div className="mb-12">
-            <h2 className="text-4xl font-headline font-bold text-white">Innovation Gallery</h2>
+            <h2 className="text-[24px] md:text-[24px] md:text-4xl font-headline font-bold text-white">Innovation Gallery</h2>
           </div>
         </FadeInSection>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((img, idx) => (
             <FadeInSection key={idx} direction="up" delay={200 + idx * 100}>
               <div className="aspect-square overflow-hidden rounded-xl group relative border border-outline-variant/10 cursor-pointer">
-                <img 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
-                  alt={img.alt} 
-                  src={img.src} 
+                <img
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  alt={img.alt}
+                  src={img.src}
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">

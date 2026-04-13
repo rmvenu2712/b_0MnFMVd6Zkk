@@ -1,8 +1,9 @@
 'use client';
 
+import HeroSection from '@/components/HeroSection';
 import dynamic from 'next/dynamic';
 
-const HeroSection = dynamic(() => import('@/components/HeroSection'), { ssr: false });
+// const HeroSection = dynamic(() => import('@/components/HeroSection'), { ssr: false });
 const HighlightsSection = dynamic(() => import('@/components/HighlightsSection'), { ssr: false });
 const AboutPreview = dynamic(() => import('@/components/AboutPreview'), { ssr: false });
 const ProductShowcase = dynamic(() => import('@/components/ProductShowcase'), { ssr: false });

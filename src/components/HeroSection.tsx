@@ -82,11 +82,11 @@ export default function HeroSection() {
             Precision Engineering
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-headline font-extrabold text-white leading-tight tracking-tighter">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-white leading-tight tracking-tighter">
             Redefining Healthcare Through <span className="text-primary text-glow">Precision</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+          <p className="text-[16px] md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
             Premium hospital beds and ICU solutions engineered for the demands of modern medical facilities. Where safety
             meets surgical precision.
           </p>
@@ -99,7 +99,7 @@ export default function HeroSection() {
               Contact Us Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/systems"
+              href="/products"
               className="border border-outline-variant/30 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center"
             >
               View Catalogue
