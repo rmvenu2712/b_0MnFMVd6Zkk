@@ -14,7 +14,7 @@ const ContactSection = dynamic(() => import('@/components/ContactSection'), { ss
 
 export default function Home() {
   return (
-    <div className="flex flex-col technical-grid">
+    <div className="flex flex-col technical-grid overflow-x-hidden ">
       <HeroSection />
       <HighlightsSection />
       <AboutPreview />

@@ -78,8 +78,8 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
         {/* Left Content */}
         <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-primary font-label text-xs font-semibold tracking-widest uppercase">
-            Precision Engineering
+            <div className="inline-block px-3 py-1 bg-surface-container-high border border-outline-variant/15 rounded-full mb-6">
+            <span className="text-primary font-label text-xs font-bold uppercase tracking-widest">Precision Engineering</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-white leading-tight tracking-tighter">
@@ -100,7 +100,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/products"
-              className="border border-outline-variant/30 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center"
+              className="border border-outline-variant/60 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition-all flex items-center justify-center"
             >
               View Catalogue
             </Link>

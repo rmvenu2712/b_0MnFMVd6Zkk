@@ -33,7 +33,7 @@ export default function ProductShowcase() {
     <section className="py-32 px-8 bg-surface">
       <div className="max-w-7xl mx-auto">
         <FadeInSection direction="up" delay={100}>
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
             <div>
               <span className="text-xs font-bold text-primary uppercase tracking-[0.3em] mb-4 block">
                 Product Showcase
@@ -46,7 +46,7 @@ export default function ProductShowcase() {
               href="/products"
               className="text-primary font-bold text-sm flex items-center gap-2 group hover:text-primary-container transition-colors"
             >
-              Explore Catalog
+              Explore Products
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

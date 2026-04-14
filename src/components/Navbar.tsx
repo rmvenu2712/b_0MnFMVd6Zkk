@@ -13,6 +13,9 @@ export default function Navbar() {
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
   const pathname = usePathname();
 
+  const [logoMounted, setLogoMounted] = useState(false);
+
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -20,6 +23,25 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
+
+  const [logoKey, setLogoKey] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 10) {
+        setLogoKey(prev => prev + 1);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -70,10 +92,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-16 h-16">
               <Image
+                key={logoKey}
                 src="/assets/images/logo.png"
                 alt="SKYON Logo"
                 fill
-                className="object-contain md:group-hover:scale-110 transition-transform z-10 animate-shadow-blink"
+                className="object-contain md:group-hover:scale-110 z-10 animate-shadow-blink animate-logo-entrance"
               />
             </div>
             <span className="text-xl font-black text-white tracking-tighter uppercase font-headline">
@@ -155,7 +178,7 @@ export default function Navbar() {
               : 'grid-rows-[0fr] opacity-0 pointer-events-none'
           )}
         >
-          <div className="overflow-hidden bg-surface-container border-b border-outline-variant/10 shadow-2xl">
+          <div className="overflow-y-auto max-h-[calc(100vh-72px)] bg-surface-container border-b border-outline-variant/10 shadow-2xl">
             <div className="px-6 py-8 flex flex-col gap-6">
               {navLinks.map((link) => (
                 <div
@@ -173,9 +196,9 @@ export default function Navbar() {
                       href={link.path}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        'text-xl font-headline font-bold block transition-all duration-300',
+                        'text-lg font-headline font-bold block transition-all duration-300',
                         pathname === link.path
-                          ? 'text-primary translate-x-2'
+                          ? 'text-primary'
                           : 'text-on-surface-variant hover:text-white hover:translate-x-2'
                       )}
                     >
@@ -219,7 +242,7 @@ export default function Navbar() {
                                 setIsOpen(false);
                                 setOpenSubmenu(null);
                               }}
-                              className="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors block py-0.5"
+                              className="text-on-surface-variant text-md font-medium hover:text-primary transition-colors block py-0.5"
                             >
                               {sub.name}
                             </Link>
